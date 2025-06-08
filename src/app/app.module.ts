@@ -6,17 +6,23 @@ import { AppComponent } from './app.component';
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import { LoginComponent } from './features/login/login.component';
 import {FormsModule} from "@angular/forms";
+import { RegistrationComponent } from './features/registration/registration.component';
+import { ActivateAccountComponent } from './features/activate-account/activate-account.component';
+import {CodeInputModule} from "angular-code-input";
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    RegistrationComponent,
+    ActivateAccountComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    CodeInputModule
   ],
   providers: [
     HttpClient
